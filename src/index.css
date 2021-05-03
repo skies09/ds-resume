@@ -56,6 +56,8 @@ body{
 {
   font-size: var(--typing-font);
   margin-bottom: 30px;
+  color: #000000;
+  text-shadow:2px, 2px, #000000;
 }
 
 nav ul{
@@ -68,7 +70,7 @@ nav ul{
 }
 nav ul li
 {
-  margin:40px;
+  margin:14px;
 }
 
 a
@@ -130,14 +132,7 @@ h1,h2,h3,h4,p{
   {
     padding: 50px ;
   }
-  /* nav ul
-  {
-    display: flex;
-  }
-  nav ul li
-  {
-    margin: 10px;
-  } */
+
   
 }
 
