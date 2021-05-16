@@ -25,17 +25,24 @@ body{
   width: 100vw;
   min-height: 100vh;
 }
-/* nav
-{
-  padding:60px 30px 0px 30px ;
-  flex:var(--sidebar-flex);
-  background: linear-gradient(180deg,#060b26, #0085ff 50% 80%);
-} */
+
 .condiv
 {
   padding: 100px ;
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
+  background-image: url(img/computing1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   flex:var(--condiv-flex);
+}
+.condiv span{
+  color:#000000;
+  text-shadow: 3px 3px 3px #eeeeee;
 }
 
 .home
@@ -82,6 +89,8 @@ a
 .subtopic
 {
   margin:10px 10px 30px 10px !important;
+  color:#eeeeee;
+  text-shadow: 3px 3px 3px #000000;
 }
 p{
   font-size: var(--fontsize-p);
@@ -119,6 +128,8 @@ h1,h2,h3,h4,p{
 {
   list-style-type:none;
   margin:30px;
+  color:#eeeeee;
+  text-shadow: 3px 3px 3px #000000;
 }
 
 @media all and (max-width: 450px) {
@@ -131,15 +142,12 @@ h1,h2,h3,h4,p{
   {
     flex-direction: column;
   }
-  /* .sidebar
-  {
-    padding: 30px;
-    background: linear-gradient(180deg, #0085ff 50%, #85c3ff 80%);
-  } */
-  .condiv
+
+  /* .condiv
   {
     padding: 50px ;
-  }
+    
+  } */
 
   
 }
