@@ -67,19 +67,6 @@ body{
   text-shadow:2px, 2px, #000000;
 }
 
-nav ul{
-  font-size:var(--fontsize-nav) ;
-  text-align: center;
-  list-style-type: none;
-  text-decoration: none;
-  color: #23374d !important;
-  text-shadow: #000000;
-}
-nav ul li
-{
-  margin:14px;
-}
-
 a
 {
   text-decoration: none;
