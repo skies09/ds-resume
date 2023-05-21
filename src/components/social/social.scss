@@ -1,0 +1,32 @@
+@import "../../global.scss";
+
+  a.social {
+    margin: 0 1em;
+    transition: transform 250ms;
+    display: inline-block;
+
+    @include mobile{
+      margin: 0 10px;
+      font-size:12px;
+    }
+  }
+  
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+  
+  a.facebook {
+    color:  $mainColor;
+  }
+
+  a.instagram {
+    color: $mainColor;
+  }
+
+  a.linkedin {
+    color: $mainColor;
+  }
+
+  a.github {
+    color: $mainColor;
+  }

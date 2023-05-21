@@ -1,0 +1,143 @@
+@import "../../global.scss";
+
+.contact {
+  background: linear-gradient(45deg, $mainColorThree 50%, $mainColorTwo 50% );
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 64px;
+      padding-top: 26%;
+      padding-left:12%;
+      color: $mainColor;
+
+      @include mobile{
+        text-align: center;
+        padding-left:8%;
+        padding-top: 12%;
+        font-size: 32px;
+      }
+    }
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 24px;
+      padding-top: 20px;
+      padding-left:12%;
+      color: $mainColor;
+
+    @include mobile{
+      text-align: center;
+      padding-left:8%;
+      font-size: 24px;
+    }
+  }
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    padding-top: 56px;
+    padding-left:12%;
+    color: $mainColor;
+
+    @include mobile{
+      text-align: center;
+      padding-left:8%;
+      padding-top: 40px;
+      font-size: 18px;
+    }
+  }
+}
+
+  
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 35px;
+      color: $mainColor;
+
+      @include mobile{
+        text-align: center;
+        padding-left:8%;
+        font-size: 24px;
+      }
+  }
+
+    form {
+      width: 70%;
+      height: 55%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      input {
+        width: 400px;
+        height: 30px;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        padding-left:4px;
+
+        @include mobile {
+          margin-left: 10%;
+          width: 200px;
+          height: 20px;
+        }
+      }
+
+      textarea {
+        width: 400px;
+        height: 200px;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        padding-left:4px;
+
+        @include mobile {
+          margin-left: 10%;
+          width: 200px;
+          height: 100px;
+        }
+      }
+
+      button {
+        width: 108px;
+        height: 30px;
+        background-color: $mainColor;
+        border: none;
+        border-radius: 8px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+
+        &:focus {
+          opacity: 0.5;
+        }
+      }
+
+      span {
+        color: $mainColor;
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif;
+
+        @include mobile {
+          margin-left: 10%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+
+// color schema
+$mainColor: #66FCF1; 
+$mainColorTwo:#23374d;
+$mainColorThree:#0B0C10;
+$mainColorFour:#C5C6C7;
+$mainColorFive:#ADD8E6;
+
+// fonts
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'PT Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+
+$width: 768px;
+
+$margin: 0;
+$overflow-x: hidden;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}
+
+
