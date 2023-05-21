@@ -8,9 +8,11 @@ export default function Intro() {
 		"I'm a Python developer ",
 		"I'm a full stack web developer ",
 	];
+
 	const handleClick = () => {
-		// redirect to contact
+		window.location.href = "#contact";
 	};
+
 	return (
 		<div className="intro" id="intro">
 			<ParticleComponent />

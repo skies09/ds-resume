@@ -86,7 +86,13 @@
         color: $mainColor;
         border: solid $mainColor 3px;
         border-radius: 8px;
-        width:35%;
+        width:256px;
+      }
+      @include mobile{
+        width:256px;
+      }
+      &:focus {
+        opacity: 0.5;
       }
     }
 

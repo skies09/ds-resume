@@ -92,8 +92,9 @@
         padding-left:4px;
 
         @include mobile {
+          margin-bottom: 1%;
           margin-left: 10%;
-          width: 200px;
+          width: 250px;
           height: 20px;
         }
       }
@@ -107,23 +108,27 @@
 
         @include mobile {
           margin-left: 10%;
-          width: 200px;
+          width: 250px;
           height: 100px;
         }
       }
 
       button {
-        width: 108px;
-        height: 30px;
-        background-color: $mainColor;
-        border: none;
-        border-radius: 8px;
-        font-weight: 500;
         font-family: 'Roboto', sans-serif;
-        font-size: 18px;
+        font-size: 26px;
+        color: $mainColor;
+        border: solid $mainColor 3px;
+        border-radius: 8px;
+        width:35%;
+        background-color: $mainColorThree;
         text-align: center;
         cursor: pointer;
 
+        @include mobile{
+          align-items: center;
+          margin-left: 8%;
+          margin-top: 1%;
+        }
         &:focus {
           opacity: 0.5;
         }
