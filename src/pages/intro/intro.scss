@@ -80,19 +80,22 @@
         color: $mainColor;
       }
 
-      .btn{
-        font-family: 'Roboto', sans-serif;
-        font-size: 26px;
-        color: $mainColor;
-        border: solid $mainColor 3px;
-        border-radius: 8px;
-        width:256px;
-      }
-      @include mobile{
-        width:256px;
-      }
-      &:focus {
-        opacity: 0.5;
+    .btn{
+      font-family: 'Roboto', sans-serif;
+      font-size: 26px;
+      color: $mainColor;
+      border: solid $mainColor 3px;
+      border-radius: 8px;
+      width:256px;
+        @include mobile{
+          width:256px;
+        }
+        &:focus {
+          opacity: 0.1;
+        }
+        &:hover {
+          background-color: $mainColorTwo;
+        }
       }
     }
 
