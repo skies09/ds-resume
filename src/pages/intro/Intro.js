@@ -39,7 +39,7 @@ export default function Intro() {
 			</div>
 			<div className="right">
 				<div className="imgContainer">
-					{/* <img src="assets/me.png" alt="" /> */}
+					<img src="assets/me.jpeg" alt="" />
 				</div>
 			</div>
 		</div>
