@@ -51,7 +51,6 @@ export default function Portfolio() {
 	return (
 		<div className="portfolio" id="portfolio">
     <div className='header'>
-			<h1>Portfolio</h1>
 			<ul>
 				{list.map((item) => (
 					<PortfolioList
@@ -69,7 +68,9 @@ export default function Portfolio() {
 			<div className="container">
 				{data.map((item) => (
 					<div className="item">
+					{item.img &&(
 						<img src={item.img} alt="" />
+						)}
 						<button onClick={() => handleClick(item)}>
 							{item.title}
 						</button>
