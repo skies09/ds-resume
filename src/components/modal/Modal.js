@@ -7,7 +7,6 @@ export default function Modal({ setIsOpen, item }) {
 	const showHideClassName = setIsOpen
 		? "modal display-block"
 		: "modal display-none";
-	console.log(item, "item");
 	return (
 		<div className={showHideClassName}>
 			<div class="portfolio-modal">
@@ -16,7 +15,7 @@ export default function Modal({ setIsOpen, item }) {
 				</button>
 				<div className="title">{item.title}</div>
 				<div className="link">{item.link}</div>
-				<img className="image" src={item.img} alt="" />
+				{item.img && <img className="image" src={item.img} alt="" />}
 				<div className="description">{item.description}</div>
 				<div className="keyFeatures">
 					Features: <br></br>
