@@ -14,7 +14,7 @@ export default function Contact() {
 				<h1>Want to chat?</h1>
 				<h2> Got an interesting project or idea?</h2>
 				<h2>Let's work together!</h2>
-				<p>Email : d.smith09@icloud.com</p>
+				<p>Email : donna.smith09@hotmail.com</p>
 			</div>
 			<div className="right">
 				{!message && <h2>Get in touch</h2>}
