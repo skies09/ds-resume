@@ -3,6 +3,13 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
+// <div className="languages">
+// Languages used: <br></br>
+// {item.languages.map((language) => (
+// 	<div className="language">{language}</div>
+// ))}
+// </div>
+
 export default function Modal({ setIsOpen, item }) {
 	const showHideClassName = setIsOpen
 		? "modal display-block"
@@ -18,15 +25,11 @@ export default function Modal({ setIsOpen, item }) {
 				{item.img && <img className="image" src={item.img} alt="" />}
 				<div className="description">{item.description}</div>
 				<div className="keyFeatures">
-					Features: <br></br>
-					{item.keyFeatures}
-				</div>
-				<div className="languages">
-					Languages used: <br></br>
-					{item.languages.map((language) => (
-						<div className="language">{language}</div>
+					Features
+					</div>
+					{item.keyFeatures.map((feature) => (
+						<div className="feature">{feature}</div>
 					))}
-				</div>
 			</div>
 		</div>
 	);

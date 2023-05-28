@@ -1,14 +1,14 @@
 @import "../../global.scss";
 
 .portfolio-modal {
-  border: solid $mainColorThree 3px;
+  border: solid $mainColor 3px;
   border-radius: 8px;
   height:50%;
   width:50%;
   position: fixed;
   top: 25%;
   left: 25%;
-  background-color: $mainColorFive;
+  background-color: $mainColorThree;
   opacity: 1;
   z-index: 100;
 
@@ -26,21 +26,20 @@
   float: right;
   margin: 5px;
   border:none;
-  color: $mainColorThree;
+  color: $mainColor;
 }
 
 .title{
   margin-top: 6px;
-  color: $mainColorThree;
+  color: $mainColor;
   text-align: center;
-  text-decoration: underline;
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
 
 }
 
 .image {
-  border: solid $mainColorThree 3px;
+  border: solid $mainColor 3px;
   border-radius: 8px;
   margin-top:12px;
   margin-bottom:12px;
@@ -56,15 +55,27 @@
   margin:8px;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  color: $mainColorThree;
+  color: $mainColor;
 }
 
 .keyFeatures {
+  text-decoration: underline;
   text-align: center;
   margin:8px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: $mainColorThree;
+  color: $mainColor;
+}
+.feature {
+  text-align: center;
+  margin:8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: $mainColor;
+  border: solid $mainColor 2px;
+  border-radius: 8px;
+  width:90%;
+  margin-left:5%;
 }
 
 .languages {
@@ -77,10 +88,10 @@
 
 .link {
   text-align: center;
-  margin:8px;
+  margin:12px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: $mainColorThree;
+  color: $mainColor;
 }
 
   

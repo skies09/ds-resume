@@ -5,9 +5,9 @@ export const featuredPortfolio = [
 		id: 1,
 		title: "Dog Harmony",
 		img: "",
-		description: "Search engine for dogs that need rehoming",
+		description: "Search engine for dogs that need re-homing",
 		languages: ["Django", "React"],
-		keyFeatures: "Binary search algorithm",
+		keyFeatures: ["Binary search algorithm"],
 		link: "Coming Soon!",
 	},
 	{
@@ -15,9 +15,9 @@ export const featuredPortfolio = [
 		title: "Omega Skate",
 		img: "assets/omegaSk8.png",
 		description:
-			"Built as a milestone project for my diploma, Omega Skate is an online skateboard shop completely focused to skateboards.",
+			"Built as a milestone project for my diploma, Omega Skate is an eCommerce skateboard shop completely focused to skateboards.",
 		languages: ["Django", "Bootstrap"],
-		keyFeatures: "Use of Django components. Login and cart functionality",
+		keyFeatures: ["Use of Django components", "Login and cart functionality"],
 		link: "www.",
 	},
 	{
@@ -26,7 +26,7 @@ export const featuredPortfolio = [
 		img: "assets/hgvBlog.png",
 		description: "HGV driving blog",
 		languages: ["Flask", "Bootstrap"],
-		keyFeatures: "Use of Flask components. CRUD functionality",
+		keyFeatures: ["Use of Flask components", "CRUD functionality"],
 		link: "www.",
 	},
 	{
@@ -36,7 +36,7 @@ export const featuredPortfolio = [
 		description: "Dog breed database",
 		languages: ["Flask", "MongoDB"],
 		keyFeatures:
-			"Static site with database. To Be linked to other sites via API",
+			["Static site with database", "To be linked to other sites via API"],
 		link: "Coming Soon!",
 	},
 ];
@@ -46,9 +46,9 @@ export const webPortfolio = [
 		id: 1,
 		title: "Dog Harmony",
 		img: "",
-		description: "Search engine for dogs that need rehoming",
+		description: "Search engine for dogs that need re-homing",
 		languages: ["Django", "React"],
-		keyFeatures: "Binary search algorithm",
+		keyFeatures: ["Binary search algorithm"],
 		link: "Coming Soon!",
 	},
 	{
@@ -56,9 +56,9 @@ export const webPortfolio = [
 		title: "Omega Skate",
 		img: "assets/omegaSk8.png",
 		description:
-			"Built as a milestone project for my diploma, Omega Skate is an online skateboard shop completely focused to skateboards.",
+			"Built as a milestone project for my diploma, Omega Skate is an eCommerce skateboard shop completely focused to skateboards.",
 		languages: ["Django", "Bootstrap"],
-		keyFeatures: "Use of Django components. Login and cart functionality",
+		keyFeatures: ["Use of Django components", "Login and cart functionality"],
 		link: "www.",
 	},
 	{
@@ -67,7 +67,7 @@ export const webPortfolio = [
 		img: "assets/hgvBlog.png",
 		description: "HGV driving blog",
 		languages: ["Flask", "Bootstrap"],
-		keyFeatures: "Use of Flask components. CRUD functionality",
+		keyFeatures: ["Use of Flask components", "CRUD functionality"],
 		link: "www.",
 	},
 	{
@@ -77,25 +77,25 @@ export const webPortfolio = [
 		description: "Dog breed database",
 		languages: ["Flask", "MongoDB"],
 		keyFeatures:
-			"Static site with database. To Be linked to other sites via API",
+			["Static site with database", "To be linked to other sites via API"],
 		link: "Coming Soon!",
 	},
   {
 		id: 5,
-		title: "Diary app",
+		title: "The Joy of Reflection",
 		img: "",
-		description: "Day tracker",
+		description: "Diary App",
 		languages: ["Django", "React"],
-		keyFeatures: "Login functionality.",
+		keyFeatures: ["Login functionality", "Day Tracker"],
 		link: "Coming Soon!",
 	},
   {
 		id: 6,
 		title: "Breed Calculator",
 		img: "",
-		description: "Finds the dogs breeds most suited to the user based on lifestyle",
+		description: "Finds your most suited dog breeds based on lifestyle and personality",
 		languages: ["Django", "React"],
-		keyFeatures: "Search algorithm functionality",
+		keyFeatures: ["Search algorithm functionality"],
 		link: "Coming Soon!",
 	},
 ];
@@ -107,7 +107,7 @@ export const landingPagePortfolio = [
 		img: "assets/donnasDeliveries.png",
 		description: "Sub-contracted HGV driver for hire",
 		languages: ["HTML", "CSS", "Javascript"],
-		keyFeatures: "Email messaging",
+		keyFeatures: ["Email messaging"],
 		link: "www.donnas-deliveries.com",
 	},
 	{
@@ -117,7 +117,7 @@ export const landingPagePortfolio = [
 		description:
 			"Dj advertising site",
 		languages: ["React"],
-		keyFeatures: "Music player",
+		keyFeatures: ["Music player"],
 		link: "Coming soon!",
 	},
 	{
@@ -126,7 +126,7 @@ export const landingPagePortfolio = [
 		img: "",
 		description: "Self employed plasterer for hire",
 		languages: ["HTML", "CSS", "Javascript"],
-		keyFeatures: "Email messaging",
+		keyFeatures: ["Email messaging"],
 		link: "Coming soon!",
 	},
 	{
@@ -135,7 +135,7 @@ export const landingPagePortfolio = [
 		img: "",
 		description: "Cleaning services",
 		languages: ["HTML", "CSS", "Javascript"],
-		keyFeatures: "Email messaging. Booking service",
+		keyFeatures: ["Email messaging", "Booking service"],
 		link: "Coming Soon!",
 	},
 ];
