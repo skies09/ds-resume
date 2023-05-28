@@ -7,7 +7,7 @@ import "./app.scss"
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
 
-
+      // <Skills/>
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
   return (
@@ -17,7 +17,7 @@ function App() {
     <div className="sections">
       <Intro/>
       <Portfolio/>
-      <Skills/>
+
       <Contact/>
     </div>
     </div>
