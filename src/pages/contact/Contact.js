@@ -1,12 +1,30 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./contact.scss";
 
 export default function Contact() {
+	const form = useRef();
 	const [message, setMessage] = useState(false);
 
-	const handleSubmit = (e) => {
+	const sendEmail = (e) => {
 		e.preventDefault();
-		setMessage(true);
+
+		emailjs
+			.sendForm(
+				"service_k2htbio",
+				"template_y4knaad",
+				form.current,
+				"hcvU2WX3pQVEBNB8s"
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+					setMessage(true);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
 	};
 	return (
 		<div className="contact" id="contact">
@@ -18,12 +36,12 @@ export default function Contact() {
 			</div>
 			<div className="right">
 				{!message && <h2>Get in touch</h2>}
-				<form onSubmit={handleSubmit}>
+				<form ref={form} onSubmit={sendEmail}>
 					{!message && (
 						<>
-							<input type="text" placeholder="Email" />
-							<textarea placeholder="Message"></textarea>
-							<button type="submit">Send</button>
+							<input  type="email" name="user_email" placeholder="Email" />
+							<textarea name='message' placeholder="Message"></textarea>
+							<button type="submit" value="Send">Send</button>
 						</>
 					)}
 					{message && (
