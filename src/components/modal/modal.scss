@@ -3,20 +3,20 @@
 .portfolio-modal {
   border: solid $mainColor 3px;
   border-radius: 8px;
-  height:50%;
-  width:50%;
+  height:70%;
+  width:70%;
   position: fixed;
-  top: 25%;
-  left: 25%;
+  top: 15%;
+  left: 15%;
   background-color: $mainColorThree;
   opacity: 1;
   z-index: 100;
 
   @include mobile{
     top: 15%;
-    left: 15%;
+    left: 10%;
     height:70%;
-    width:70%;
+    width:80%;
 
   }
 }
@@ -29,8 +29,11 @@
   color: $mainColor;
 }
 
+.portfolio-content {
+  margin-top:40px;
+}
+
 .title{
-  margin-top: 6px;
   color: $mainColor;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -45,9 +48,13 @@
   margin-bottom:12px;
   margin-left: 10%;
   width: 80%;
-  height: 30%;
+  height: 20rem;
   object-fit: cover;
   z-index: 1;
+  @include mobile{
+    height: 8rem;
+  
+    }
 }
 
 .description {
@@ -74,8 +81,8 @@
   color: $mainColor;
   border: solid $mainColor 2px;
   border-radius: 8px;
-  width:90%;
-  margin-left:5%;
+  width:80%;
+  margin-left:10%;
 }
 
 .languages {
@@ -86,12 +93,21 @@
   color: $mainColorThree;
 }
 
-.link {
+.itemLink {
   text-align: center;
   margin:12px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: $mainColor;
+  padding:1em;
+}
+
+.link {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: $mainColor;
+  display:inline-block;
 }
 
   

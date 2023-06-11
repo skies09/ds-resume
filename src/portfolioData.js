@@ -18,7 +18,7 @@ export const featuredPortfolio = [
 			"Built as a milestone project for my diploma, Omega Skate is an eCommerce skateboard shop completely focused to skateboards.",
 		languages: ["Django", "Bootstrap"],
 		keyFeatures: ["Use of Django components", "Login and cart functionality"],
-		link: "www.",
+		link: "",
 	},
 	{
 		id: 3,
@@ -27,7 +27,7 @@ export const featuredPortfolio = [
 		description: "HGV driving blog",
 		languages: ["Flask", "Bootstrap"],
 		keyFeatures: ["Use of Flask components", "CRUD functionality"],
-		link: "www.",
+		link: "",
 	},
 	{
 		id: 4,
@@ -59,7 +59,7 @@ export const webPortfolio = [
 			"Built as a milestone project for my diploma, Omega Skate is an eCommerce skateboard shop completely focused to skateboards.",
 		languages: ["Django", "Bootstrap"],
 		keyFeatures: ["Use of Django components", "Login and cart functionality"],
-		link: "www.",
+		link: "",
 	},
 	{
 		id: 3,
@@ -68,7 +68,7 @@ export const webPortfolio = [
 		description: "HGV driving blog",
 		languages: ["Flask", "Bootstrap"],
 		keyFeatures: ["Use of Flask components", "CRUD functionality"],
-		link: "www.",
+		link: "",
 	},
 	{
 		id: 4,

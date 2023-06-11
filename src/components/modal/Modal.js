@@ -20,16 +20,28 @@ export default function Modal({ setIsOpen, item }) {
 				<button className="btn" onClick={() => setIsOpen(false)}>
 					<FontAwesomeIcon icon={faClose} size="2x" />
 				</button>
-				<div className="title">{item.title}</div>
-				<div className="link">{item.link}</div>
-				{item.img && <img className="image" src={item.img} alt="" />}
-				<div className="description">{item.description}</div>
-				<div className="keyFeatures">
-					Features
-					</div>
+				<div className="portfolio-content">
+					<div className="title">{item.title}</div>
+
+					{item.img && (
+						<img className="image" src={item.img} alt="" />
+					)}
+					{item.link.startsWith("www") && (
+						<div className="itemLink">
+							<a className="link" href={item.link}>
+								{item.link}
+							</a>
+						</div>
+					)}
+					{!item.link.startsWith("www") && (
+						<div className="itemLink">{item.link}</div>
+					)}
+					<div className="description">{item.description}</div>
+					<div className="keyFeatures">Features</div>
 					{item.keyFeatures.map((feature) => (
 						<div className="feature">{feature}</div>
 					))}
+				</div>
 			</div>
 		</div>
 	);

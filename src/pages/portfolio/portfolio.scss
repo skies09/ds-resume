@@ -22,7 +22,8 @@
     color: $mainColor;
     margin-top:2%;
     @include mobile{
-    // height:20%;
+    margin-top:12%;
+    height:24%;
     }
   }
 
@@ -34,7 +35,7 @@
     flex-direction: row;
 
     @include mobile{
-      margin: 10px 0;
+      margin: 20px 0;
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -84,6 +85,7 @@
         font-family: 'Roboto', sans-serif;
         text-align: center;
         cursor: pointer;
+        z-index:1;
       }
       img {
         width: 100%;
