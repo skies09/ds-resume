@@ -53,6 +53,10 @@
       font-size: 18px;
     }
   }
+  @include mobile {
+    max-height:40%;
+    margin-top:2%;
+  }
 }
 
   
@@ -82,7 +86,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
+      // justify-content: space-around;
 
       input {
         width: 286px;
@@ -91,6 +95,7 @@
         font-family: 'Roboto', sans-serif;
         padding-left:4px;
         z-index: 1;
+        margin:2%;
 
         @include mobile {
           margin-bottom: 1%;
@@ -107,6 +112,7 @@
         font-size: 18px;
         font-family: 'Roboto', sans-serif;
         z-index: 1;
+        margin:2%;
 
         @include mobile {
           margin-left: 0px;
@@ -126,9 +132,11 @@
         width:35%;
         background-color: $mainColorThree;
         text-align: center;
+        margin:2%;
         @include mobile{
           width:128px;
-          height:78px;
+          height:85px;
+          margin:0%;
           }
           &:focus {
             opacity: 0.1;
@@ -148,6 +156,13 @@
           height:256px;
         }
       }
+      @include mobile {
+        height: 60%;
+      }
+    }
+    @include mobile {
+      max-height:45%;
+      margin-bottom:2%;
     }
   }
 }

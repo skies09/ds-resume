@@ -16,32 +16,23 @@ export default function Intro() {
 	return (
 		<div className="intro" id="intro">
 			<ParticleComponent />
-			<div className="left">
-				<div className="wrapper">
-					<h2>Hey, I'm</h2>
-					<h1>Donna Smith</h1>
-					<div className="typingEffect">
-						<ReactTypingEffect
-							className="typingEffect"
-							text={typingString}
-							speed={50}
-							eraseSpeed={60}
-							eraseDelay={800}
-						/>
-					</div>
-					<button className="btn" onClick={() => handleClick()}>
-						Message Me
-					</button>
-				</div>
-				<a href="#portfolio">
-					<img src="assets/down.png" alt="" />
-				</a>
+			<div className="title-wrapper">
+				<p>
+					Hey, I'm <span>Donna Smith</span>
+				</p>
 			</div>
-			<div className="right">
-				<div className="imgContainer">
-					<img src="assets/me.jpeg" alt="" />
-				</div>
+			<div className="typingEffect">
+				<ReactTypingEffect
+					className="typingEffect"
+					text={typingString}
+					speed={50}
+					eraseSpeed={60}
+					eraseDelay={800}
+				/>
 			</div>
+			<button className="btn" onClick={() => handleClick()}>
+				Message Me
+			</button>
 		</div>
 	);
 }

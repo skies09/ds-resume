@@ -1,13 +1,13 @@
 import Navbar from "./components/navbar/Navbar"
 import Intro from "./pages/intro/Intro"
 import Portfolio from "./pages/portfolio/Portfolio"
-import Skills from "./pages/skills/Skills"
+// import Stats from "./pages/stats/Stats"
 import Contact from "./pages/contact/Contact"
 import "./app.scss"
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
 
-      // <Skills/>
+      // <Stats/>
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
   return (
