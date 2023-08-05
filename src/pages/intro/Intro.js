@@ -1,6 +1,7 @@
-import "./intro.scss";
 import ReactTypingEffect from "react-typing-effect";
 import ParticleComponent from "../../components/particles/ParticleComponent";
+import Social from "../../components/social";
+import "./intro.scss";
 
 export default function Intro() {
 	const typingString = [
@@ -33,6 +34,9 @@ export default function Intro() {
 			<button className="btn" onClick={() => handleClick()}>
 				Message Me
 			</button>
+			<div className="socialContainer">
+				<Social />
+			</div>
 		</div>
 	);
 }

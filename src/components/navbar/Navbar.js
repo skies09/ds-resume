@@ -12,7 +12,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
 					<a href="#intro" className="initials">
 						{"<DS>"}
 					</a>
-					<div className="itemContainer">
+					<div className="socialContainer">
 						<Social />
 					</div>
 				</div>
