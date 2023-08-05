@@ -38,7 +38,7 @@
 			}
 		}
 		p {
-			font-family: "Roboto", sans-serif;
+			font-family: "Montserrat", sans-serif;
 			font-size: 4rem;
 			color: $mainColorFive;
 			@include mobile {
@@ -48,34 +48,34 @@
 	}
 
 	.typingEffect {
-		font-family: "Roboto", sans-serif;
+		font-family: "Roboto Mono", sans-serif;
 		font-size: var(--typing-font);
 		color: $mainColorFive;
 		font-size: 3rem;
 
 		@include mobile {
-			font-size: 24px;
+			font-size: 18px;
 		}
 	}
 
 	.btn {
-		font-family: "Roboto", sans-serif;
+		font-family: "Montserrat", sans-serif;
 		font-size: 28px;
 		margin-top: 4rem;
 		color: $mainColor;
 		border: solid $mainColor 3px;
 		border-radius: 5rem;
 		padding: 1rem;
-    padding-left:2rem;
-    padding-right:2rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
 
 		@include mobile {
 			width: 256px;
 			margin-top: 2rem;
 			width: 70%;
-      font-size:26px;
-      padding:0.5rem;
-      border-radius: 30px;
+			font-size: 26px;
+			padding: 0.5rem;
+			border-radius: 30px;
 		}
 		&:focus {
 			opacity: 0.1;

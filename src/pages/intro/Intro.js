@@ -25,9 +25,9 @@ export default function Intro() {
 				<ReactTypingEffect
 					className="typingEffect"
 					text={typingString}
-					speed={50}
-					eraseSpeed={60}
-					eraseDelay={800}
+					speed={60}
+					eraseSpeed={50}
+					eraseDelay={1500}
 				/>
 			</div>
 			<button className="btn" onClick={() => handleClick()}>
