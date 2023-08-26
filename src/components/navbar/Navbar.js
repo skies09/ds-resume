@@ -10,7 +10,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
 						Donna Smith
 					</a>
 					<a href="#intro" className="initials">
-						{"<DS>"}
+						{"<DS/>"}
 					</a>
 					<div className="socialContainer">
 						<Social />

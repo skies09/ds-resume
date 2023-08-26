@@ -2,22 +2,17 @@ import { useEffect, useState } from "react";
 import PortfolioList from "../../components/portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
-	featuredPortfolio,
 	webPortfolio,
 	landingPagePortfolio,
 } from "../../portfolioData";
 import Modal from "../../components/modal/Modal";
 
 export default function Portfolio() {
-	const [selected, setSelected] = useState("featured");
+	const [selected, setSelected] = useState("web");
 	const [data, setData] = useState([]);
 	const [isOpen, setIsOpen] = useState(false);
 	const [page, setPage] = useState("");
 	const list = [
-		{
-			id: "featured",
-			title: "Featured",
-		},
 		{
 			id: "web",
 			title: "Web Apps",
@@ -30,9 +25,6 @@ export default function Portfolio() {
 
 	useEffect(() => {
 		switch (selected) {
-			case "featured":
-				setData(featuredPortfolio);
-				break;
 			case "web":
 				setData(webPortfolio);
 				break;
@@ -40,7 +32,7 @@ export default function Portfolio() {
 				setData(landingPagePortfolio);
 				break;
 			default:
-				setData(featuredPortfolio);
+				setData(webPortfolio);
 		}
 	}, [selected]);
 
