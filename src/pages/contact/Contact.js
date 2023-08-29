@@ -10,10 +10,10 @@ export default function Contact() {
 	function sendEmail(values) {
 		emailjs
 			.send(
-				"service_k2htbio",
-				"template_y4knaad",
+				process.env.REACT_APP_EMAIL_SERVICE_KEY,
+				process.env.REACT_APP_EMAIL_TEMPLATE_KEY,
 				values,
-				"hcvU2WX3pQVEBNB8s"
+				process.env.REACT_APP_EMAIL_KEY
 			)
 			.then(
 				(result) => {
@@ -56,7 +56,7 @@ export default function Contact() {
 						type="email"
 						id="user_email"
 						name="user_email"
-						placeholder='Email'
+						placeholder="Email"
 					/>
 					<ErrorMessage
 						className="error"
@@ -68,8 +68,8 @@ export default function Contact() {
 						type="text"
 						id="message"
 						name="message"
-						placeholder='Message'
-						style={{"vertical-align": "top"}}
+						placeholder="Message"
+						style={{ "vertical-align": "top" }}
 					/>
 					<button className="sendEmailBtn" type="submit">
 						Send

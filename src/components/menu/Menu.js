@@ -1,7 +1,7 @@
 
 import "./menu.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBriefcase, faGears, faEnvelope, faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faEnvelope, faHouse } from "@fortawesome/free-solid-svg-icons";
 
 // <li onClick={()=>setMenuOpen(false)}>
 // <a href="#skills"><FontAwesomeIcon icon={faGears} size="xs" /><span>Skills</span></a>
