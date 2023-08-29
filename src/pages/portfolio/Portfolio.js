@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../../components/portfolioList/PortfolioList";
 import "./portfolio.scss";
-import {
-	webPortfolio,
-	landingPagePortfolio,
-} from "../../portfolioData";
+import { webPortfolio, landingPagePortfolio } from "../../portfolioData";
+import Button from "../../components/button/Button";
 import Modal from "../../components/modal/Modal";
 
 export default function Portfolio() {
@@ -42,30 +40,31 @@ export default function Portfolio() {
 	};
 	return (
 		<div className="portfolio" id="portfolio">
-    <div className='header'>
-			<ul>
-				{list.map((item) => (
-					<PortfolioList
-						title={item.title}
-						active={selected === item.id}
-						setSelected={setSelected}
-						id={item.id}
-					/>
-				))}
-			</ul>
-      </div>
+			<div className="header">
+				<ul>
+					{list.map((item) => (
+						<PortfolioList
+							title={item.title}
+							active={selected === item.id}
+							setSelected={setSelected}
+							id={item.id}
+						/>
+					))}
+				</ul>
+			</div>
 			<div className="modal">
 				{isOpen && <Modal setIsOpen={setIsOpen} item={page} />}
 			</div>
 			<div className="container">
 				{data.map((item) => (
 					<div className="item">
-					{item.img &&(
-						<img src={item.img} alt="" />
-						)}
-						<button onClick={() => handleClick(item)}>
-							{item.title}
-						</button>
+						{item.img && <img src={item.img} alt="" />}
+						<Button
+							text={item.title}
+							className={"button"}
+							active={true}
+							action={() => handleClick(item)}
+						/>
 					</div>
 				))}
 			</div>

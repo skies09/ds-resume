@@ -1,168 +1,175 @@
 @import "../../global.scss";
 
 .contact {
-  background: linear-gradient(45deg, $mainColorThree 50%, $mainColorTwo 50% );
-  display: flex;
+	background: linear-gradient(45deg, $mainColorThree 50%, $mainColorTwo 50%);
+	display: flex;
 
-  @include mobile {
-    flex-direction: column;
-  }
+	@include mobile {
+		flex-direction: column;
+	}
 
-  .left {
-    flex: 1;
-    overflow: hidden;
+	.left {
+		flex: 1;
+		overflow: hidden;
 
-    h1 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 64px;
-      padding-top: 26%;
-      padding-left:12%;
-      color: $mainColor;
+		h1 {
+			font-family: "Roboto", sans-serif;
+			font-size: 64px;
+			padding-top: 18rem;
+			padding-left: 12%;
+			color: $mainColor;
 
-      @include mobile{
-        text-align: center;
-        padding-left:0px;
-        padding-top: 22%;
-        font-size: 32px;
-      }
-    }
-    h2 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 24px;
-      padding-top: 20px;
-      padding-left:12%;
-      color: $mainColor;
+			@include mobile {
+				text-align: center;
+				padding-top: 2%;
+				padding-left: 0px;
+				font-size: 32px;
+			}
+		}
+		h2 {
+			font-family: "Roboto", sans-serif;
+			font-size: 24px;
+			padding-top: 20px;
+			padding-left: 12%;
+			color: $mainColor;
 
-    @include mobile{
-      text-align: center;
-      padding-left:0px;
-      font-size: 24px;
-    }
-  }
-  p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 34px;
-    padding-top: 56px;
-    padding-left:12%;
-    color: $mainColor;
+			@include mobile {
+				text-align: center;
+				padding-left: 0px;
+				font-size: 24px;
+			}
+		}
+		p {
+			font-family: "Roboto", sans-serif;
+			font-size: 26px;
+			padding-top: 56px;
+			padding-left: 12%;
+			color: $mainColor;
 
-    @include mobile{
-      text-align: center;
-      padding-left:0px;
-      padding-top: 40px;
-      font-size: 18px;
-    }
-  }
-  @include mobile {
-    max-height:40%;
-    margin-top:2%;
-  }
-}
+			@include mobile {
+				text-align: center;
+				padding-left: 0px;
+				padding-top: 35px;
+				font-size: 18px;
+			}
+		}
+		@include mobile {
+			max-height: 18rem;
+			margin-top: 4rem;
+		}
+	}
 
-  
-  .right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	.right {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 
-    h2 {
-      text-align: center;
-      font-family: 'Roboto', sans-serif;
-      font-size: 36px;
-      color: $mainColor;
+		h2 {
+			text-align: center;
+			font-family: "Roboto", sans-serif;
+			font-size: 36px;
+			color: $mainColor;
 
-      @include mobile{
-        text-align: center;
-        padding-left:0px;
-        font-size: 24px;
-      }
-  }
+			@include mobile {
+				text-align: center;
+				padding-left: 0px;
+				font-size: 24px;
+			}
+		}
 
-    form {
-      width: 70%;
-      height: 55%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      // justify-content: space-around;
+		form {
+			width: 70%;
+			padding-left: 15%;
+			padding-right: 15%;
+			// height: 70%;
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
 
-      input {
-        width: 286px;
-        height: 30px;
-        font-size: 16px;
-        font-family: 'Roboto', sans-serif;
-        padding-left:4px;
-        z-index: 1;
-        margin:2%;
+			.email {
+				width: 70%;
+				height: 30px;
+				font-size: 16px;
+				font-family: "Roboto", sans-serif;
+				z-index: 1;
+				border-radius: 8px;
+				margin-top: 1rem;
+				margin-bottom: 1rem;
 
-        @include mobile {
-          margin-bottom: 1%;
-          margin-left: 0px;
-          width: 170px;
-          height: 20px;
-          padding:12px;
-        }
-      }
+				@include mobile {
+					margin-left: 0px;
+					width: 85%;
+					height: 20px;
+					padding: 12px;
+				}
+			}
 
-      textarea {
-        width: 286px;
-        height: 200px;
-        font-size: 18px;
-        font-family: 'Roboto', sans-serif;
-        z-index: 1;
-        margin:2%;
+			.error {
+				color: #fff;
+				width: 70%;
+				height: 30px;
+				font-size: 16px;
+				font-family: "Roboto", sans-serif;
+				z-index: 1;
+				margin: 2%;
+				border-radius: 8px;
 
-        @include mobile {
-          margin-left: 0px;
-          width: 188px;
-          height: 150px;
-          margin-top:8px;
-          margin-bottom:8px;
-        }
-      }
+				@include mobile {
+					width: 85%;
+					margin-bottom: 1%;
+					margin-left: 0px;
+				}
+			}
 
-      button {
-        font-family: 'Roboto', sans-serif;
-        font-size: 26px;
-        color: $mainColor;
-        border: solid $mainColor 3px;
-        border-radius: 8px;
-        width:35%;
-        background-color: $mainColorThree;
-        text-align: center;
-        margin:2%;
-        @include mobile{
-          width:128px;
-          height:85px;
-          margin:0%;
-          }
-          &:focus {
-            opacity: 0.1;
-          }
-          &:hover {
-            background-color: $mainColorTwo;
-          }
-      }
-      span {
-        color: $mainColor;
-        font-size: 36px;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        height:156px;
+			.message {
+				width: 70%;
+				height: 10rem;
+				font-size: 16px;
+				font-family: "Roboto", sans-serif;
+				padding-left: 4px;
+				z-index: 1;
+				border-radius: 8px;
+				margin-bottom: 1rem;
+				vertical-align: top !important;
 
-        @include mobile {
-          height:256px;
-        }
-      }
-      @include mobile {
-        height: 60%;
-      }
-    }
-    @include mobile {
-      max-height:45%;
-      margin-bottom:2%;
-    }
-  }
+				@include mobile {
+					width: 85%;
+					margin-left: 0px;
+					height: 5rem;
+					padding: 12px;
+				}
+			}
+
+			.sendEmailBtn {
+				font-family: "Montserrat", sans-serif;
+				font-size: 28px;
+				margin-top: 0.5rem;
+				background-color: $mainColorTwo;
+				color: $mainColor;
+				border: solid $mainColor 3px;
+				border-radius: 5rem;
+				padding: 0.5rem;
+				padding-left: 1rem;
+				padding-right: 1rem;
+				@include mobile {
+					font-size: 26px;
+					padding: 0.5rem;
+					border-radius: 30px;
+				}
+				&:focus {
+					opacity: 0.1;
+				}
+				&:hover {
+					background-color: $mainColorTwo;
+				}
+			}
+		}
+		@include mobile {
+			max-height: 50%;
+			justify-content: start;
+		}
+	}
 }

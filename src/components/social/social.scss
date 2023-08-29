@@ -1,11 +1,18 @@
 @import "../../global.scss";
 
+.social-container{
+  height:3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
   a.social {
     margin: 0 1em;
     transition: transform 250ms;
     display: inline-block;
     font-size:12px;
-
+ 
     @include mobile{
       margin: 0 10px;
       font-size:12px;
@@ -14,14 +21,17 @@
   
   a.social:hover {
     transform: translateY(2px);
+    box-shadow: 0 0 16px 3px $mainColorFour;
   }
   
   a.facebook {
     color:  $mainColor;
+    border-radius: 0.5rem;
   }
 
   a.instagram {
     color: $mainColor;
+    border-radius: 0.5rem;
   }
 
   a.linkedin {
@@ -30,4 +40,5 @@
 
   a.github {
     color: $mainColor;
+    border-radius: 0.5rem;
   }

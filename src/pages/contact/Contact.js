@@ -1,31 +1,84 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 import "./contact.scss";
 
 export default function Contact() {
-	const form = useRef();
-	const [message, setMessage] = useState(false);
+	const [formSubmitted, setFormSubmitted] = useState(false);
 
-	const sendEmail = (e) => {
-		e.preventDefault();
-
+	function sendEmail(values) {
 		emailjs
-			.sendForm(
+			.send(
 				"service_k2htbio",
 				"template_y4knaad",
-				form.current,
+				values,
 				"hcvU2WX3pQVEBNB8s"
 			)
 			.then(
 				(result) => {
 					console.log(result.text);
-					setMessage(true);
+					setFormSubmitted(true);
 				},
 				(error) => {
 					console.log(error.text);
 				}
 			);
+	}
+
+	const validationSchema = Yup.object({
+		user_email: Yup.string()
+			.email("Invalid email format")
+			.required("Email is required"),
+		message: Yup.string(),
+	});
+
+	const ContactForm = () => {
+		const initialValues = {
+			user_email: "",
+			message: "",
+		};
+
+		const handleSubmit = (values, { setSubmitting }) => {
+			sendEmail(values);
+			setSubmitting(false);
+		};
+
+		return (
+			<Formik
+				initialValues={initialValues}
+				validationSchema={validationSchema}
+				onSubmit={handleSubmit}
+			>
+				<Form>
+					<Field
+						className="email"
+						type="email"
+						id="user_email"
+						name="user_email"
+						placeholder='Email'
+					/>
+					<ErrorMessage
+						className="error"
+						name="user_email"
+						component="div"
+					/>
+					<Field
+						className="message"
+						type="text"
+						id="message"
+						name="message"
+						placeholder='Message'
+						style={{"vertical-align": "top"}}
+					/>
+					<button className="sendEmailBtn" type="submit">
+						Send
+					</button>
+				</Form>
+			</Formik>
+		);
 	};
+
 	return (
 		<div className="contact" id="contact">
 			<div className="left">
@@ -35,19 +88,15 @@ export default function Contact() {
 				<p>Email : donna.smith09@hotmail.com</p>
 			</div>
 			<div className="right">
-				{!message && <h2>Get in touch</h2>}
-				<form ref={form} onSubmit={sendEmail}>
-					{!message && (
-						<>
-							<input  type="email" name="user_email" placeholder="Email" />
-							<textarea name='message' placeholder="Message"></textarea>
-							<button type="submit" value="Send">Send</button>
-						</>
-					)}
-					{message && (
-						<span>Thanks, I'll get back to you shortly!</span>
-					)}
-				</form>
+				{!formSubmitted && (
+					<>
+						<h2>Get in touch</h2>
+						<ContactForm />
+					</>
+				)}
+				{formSubmitted && (
+					<h2>Thanks, I'll get back to you shortly!</h2>
+				)}
 			</div>
 		</div>
 	);

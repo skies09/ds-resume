@@ -1,13 +1,12 @@
 import Navbar from "./components/navbar/Navbar"
 import Intro from "./pages/intro/Intro"
 import Portfolio from "./pages/portfolio/Portfolio"
-// import Stats from "./pages/stats/Stats"
+import About from "./pages/about/About"
 import Contact from "./pages/contact/Contact"
 import "./app.scss"
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
-
-      // <Stats/>
+<About/>
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
   return (
@@ -17,7 +16,6 @@ function App() {
     <div className="sections">
       <Intro/>
       <Portfolio/>
-
       <Contact/>
     </div>
     </div>

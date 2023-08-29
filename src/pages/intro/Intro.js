@@ -1,5 +1,6 @@
 import ReactTypingEffect from "react-typing-effect";
 import ParticleComponent from "../../components/particles/ParticleComponent";
+import Button from "../../components/button/Button";
 import Social from "../../components/social";
 import "./intro.scss";
 
@@ -31,9 +32,12 @@ export default function Intro() {
 					eraseDelay={1500}
 				/>
 			</div>
-			<button className="btn" onClick={() => handleClick()}>
-				Message Me
-			</button>
+			<Button
+				text="Message Me"
+				className={"btn"}
+				active={true}
+				action={handleClick}
+			/>
 			<div className="socialContainer">
 				<Social />
 			</div>
