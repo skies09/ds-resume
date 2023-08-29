@@ -1,114 +1,129 @@
 @import "../../global.scss";
 
 .portfolio-modal {
-  border: solid $mainColor 3px;
-  border-radius: 8px;
-  height:70%;
-  width:70%;
-  position: fixed;
-  top: 15%;
-  left: 15%;
-  background-color: $mainColorThree;
-  opacity: 1;
-  z-index: 100;
+	border: solid $mainColor 3px;
+	border-radius: 8px;
+	height: 70%;
+	width: 70%;
+	position: fixed;
+	top: 15%;
+	left: 15%;
+	background-color: $mainColorThree;
+	opacity: 1;
+	z-index: 100;
 
-  @include mobile{
-    top: 15%;
-    left: 10%;
-    height:70%;
-    width:80%;
-
-  }
+	@include mobile {
+		top: 15%;
+		left: 10%;
+		height: 70%;
+		width: 80%;
+	}
 }
 
-.btn{
-  background-color: transparent;
-  float: right;
-  margin: 5px;
-  border:none;
-  color: $mainColor;
-  margin-right:8px;
+.btn {
+	background-color: transparent;
+	float: right;
+	margin: 5px;
+	border: none;
+	color: $mainColor;
+	margin-right: 8px;
 }
 
 .portfolio-content {
-  margin-top:40px;
+	margin-top: 40px;
 }
 
-.title{
-  color: $mainColor;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 48px;
-
+.title {
+	color: $mainColor;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-size: 48px;
+	padding-bottom: 1rem;
+	@include mobile {
+		font-size: 24px;
+	}
 }
 
 .image {
-  border: solid $mainColor 3px;
-  border-radius: 8px;
-  margin-top:12px;
-  margin-bottom:12px;
-  margin-left: 10%;
-  width: 80%;
-  height: 20rem;
-  object-fit: cover;
-  z-index: 1;
-  @include mobile{
-    height: 8rem;
-  
-    }
+	border: solid $mainColor 3px;
+	border-radius: 8px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	margin-left: 10%;
+	width: 80%;
+	height: 16rem;
+	object-fit: cover;
+	z-index: 1;
+	@include mobile {
+		height: 8rem;
+	}
 }
 
 .description {
-  text-align: center;
-  margin:8px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  color: $mainColor;
+	text-align: center;
+	margin: 8px;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	color: $mainColorFive;
+	padding-bottom: 1rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	@include mobile {
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
 }
 
 .keyFeatures {
-  text-decoration: underline;
-  text-align: center;
-  margin:8px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: $mainColor;
+	text-decoration: underline;
+	text-align: center;
+	margin: 8px;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: $mainColorFour;
 }
 .feature {
-  text-align: center;
-  margin:8px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: $mainColor;
-  border: solid $mainColor 2px;
-  border-radius: 8px;
-  width:80%;
-  margin-left:10%;
+	text-align: center;
+	margin: 0.5rem;
+	margin-left: 14rem;
+	margin-right: 14rem;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: $mainColor;
+	border: solid $mainColor 2px;
+	border-radius: 5rem;
+	border: solid $mainColor 3px;
+	padding: 0.5rem;
+	justify-content: center;
+	@include mobile {
+		margin: 0.5rem;
+		margin-left: 0.5rem;
+		margin-right: 0.55rem;
+		padding: 0.5rem;
+	}
 }
 
 .languages {
-  text-align: center;
-  margin:8px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: $mainColorThree;
+	text-align: center;
+	margin: 8px;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: $mainColorThree;
 }
 
 .itemLink {
-  text-align: center;
-  margin:12px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: $mainColor;
-  padding:1em;
+	text-align: center;
+	margin: 12px;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: $mainColor;
+	padding: 1em;
 }
 
 .link {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: $mainColor;
-  display:inline-block;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: $mainColor;
+	display: inline-block;
 }
-
-  

@@ -22,7 +22,7 @@
 		margin-top: 2%;
 		@include mobile {
 			margin-top: 12%;
-			height: 24%;
+			height: 6rem;
 		}
 	}
 
@@ -70,28 +70,27 @@
 
 			@include mobile {
 				width: 100%;
-				height: 50%;
+				height: 10rem;
 			}
 
 			button {
 				background-color: $mainColorTwo;
 				position: absolute;
 				font-size: 22px;
-        color: $mainColor;
+				color: $mainColor;
 				border: solid $mainColor 3px;
-		    border-radius: 5rem;
-        padding: 1rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        font-family: "Montserrat", sans-serif;
+				border-radius: 5rem;
+				padding: 1rem;
+				padding-left: 2rem;
+				padding-right: 2rem;
+				font-family: "Montserrat", sans-serif;
 				text-align: center;
 				cursor: pointer;
 				z-index: 1;
 				@include mobile {
 					width: 256px;
-					margin-top: 2rem;
 					width: 70%;
-					font-size: 26px;
+					font-size: 1rem;
 					padding: 0.5rem;
 					border-radius: 30px;
 				}
