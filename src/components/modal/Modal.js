@@ -33,7 +33,7 @@ export default function Modal({ setIsOpen, item }) {
 							</a>
 						</div>
 					)}
-					{!item.link.startsWith("www") && (
+					{item.link.includes("Coming Soon") && (
 						<div className="itemLink">{item.link}</div>
 					)}
 					<div className="description">{item.description}</div>
