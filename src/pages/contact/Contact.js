@@ -82,8 +82,7 @@ export default function Contact() {
 	return (
 		<div className="contact" id="contact">
 			<div className="left">
-				<h1>Want to chat?</h1>
-				<h2> Got an interesting project or idea?</h2>
+				<h1> Got an interesting project or idea?</h1>
 				<h2>Let's work together!</h2>
 				<p>Email : donna.smith09@hotmail.com</p>
 			</div>

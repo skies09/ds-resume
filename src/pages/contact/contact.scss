@@ -11,21 +11,23 @@
 	.left {
 		flex: 1;
 		overflow: hidden;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
 
 		h1 {
 			font-family: "Roboto", sans-serif;
-			font-size: 64px;
-			padding-top: 18rem;
+			font-size: 32px;
 			padding-left: 12%;
 			color: $mainColor;
 
 			@include mobile {
 				text-align: center;
-				padding-top: 2%;
 				padding-left: 0px;
 				font-size: 32px;
 			}
 		}
+
 		h2 {
 			font-family: "Roboto", sans-serif;
 			font-size: 24px;
