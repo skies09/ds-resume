@@ -1,0 +1,89 @@
+@import "../../global.scss";
+
+.cardImage {
+	width: 100%;
+	height: 50%;
+	img {
+		width: 100%;
+		object-fit: cover;
+		z-index: 1;
+	}
+	@include mobile {
+		height: 40%;
+	}
+}
+
+.card {
+	position: relative;
+	width: 40%;
+	height: 50%;
+	background: $mainColorThree;
+	border-radius: 20px;
+	box-shadow: 0 35px 80px rgba(0, 0, 0, 0.35);
+	margin: 5%;
+	@include mobile {
+		width: 90%;
+		padding-bottom:4%;
+		height: auto;
+	}
+}
+
+.cardLink {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	padding: 6px;
+	font-size: 12px;
+	color: $mainColor;
+	@include mobile {
+
+	}
+}
+
+.cardTitle {
+	font-family: "Roboto Mono", monospace;
+	text-align: left;
+	padding-left: 8px;
+	font-size: 32px;
+	color: $mainColor;
+
+	@include mobile {
+
+	}
+}
+
+.cardDescription {
+	font-family: "Montserrat", sans-serif;
+	text-align: left;
+	padding-left: 8px;
+	padding-top: 8px;
+	font-size: 16px;
+	color: $mainColor;
+
+	@include mobile {
+		// font-size: 8px;
+	}
+}
+
+.cardFeatures{
+display:flex;
+flex-wrap: wrap;
+margin:8px;
+}
+
+.cardFeature {
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-size: 12px;
+	color: $mainColorFive;
+	border: solid $mainColorFour 1px;
+	border-radius: 12px;
+	margin: 4px;
+	padding:6px;
+	justify-content: center;
+	@include mobile {
+		// margin: 0.5rem;
+		// margin-left: 0.5rem;
+		// margin-right: 0.55rem;
+		// padding: 0.5rem;
+	}
+}

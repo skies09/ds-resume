@@ -4,6 +4,7 @@ import "./portfolio.scss";
 import { webPortfolio, landingPagePortfolio } from "../../portfolioData";
 import Button from "../../components/button/Button";
 import Modal from "../../components/modal/Modal";
+import PortfolioCard from "../../components/portfolioCard/PortfolioCard";
 
 export default function Portfolio() {
 	const [selected, setSelected] = useState("web");
@@ -52,20 +53,10 @@ export default function Portfolio() {
 					))}
 				</ul>
 			</div>
-			<div className="modal">
-				{isOpen && <Modal setIsOpen={setIsOpen} item={page} />}
-			</div>
+
 			<div className="container">
 				{data.map((item) => (
-					<div className="item">
-						{item.img && <img src={item.img} alt="" />}
-						<Button
-							text={item.title}
-							className={"button"}
-							active={true}
-							action={() => handleClick(item)}
-						/>
-					</div>
+					<PortfolioCard item={item} />
 				))}
 			</div>
 		</div>
