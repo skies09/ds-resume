@@ -12,7 +12,7 @@
     transition: transform 250ms;
     display: inline-block;
     font-size:12px;
- 
+
     @include mobile{
       margin: 0 10px;
       font-size:12px;
@@ -21,7 +21,7 @@
   
   a.social:hover {
     transform: translateY(2px);
-    box-shadow: 0 0 16px 3px $mainColorFour;
+    box-shadow: 12px 8px 64px $mainColor;
   }
   
   a.facebook {

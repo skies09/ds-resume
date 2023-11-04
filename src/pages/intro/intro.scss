@@ -64,11 +64,12 @@
 		font-size: 28px;
 		margin-top: 4rem;
 		color: $mainColor;
-		border: solid $mainColor 3px;
+		border: solid $mainColor 1px;
 		border-radius: 5rem;
 		padding: 1rem;
 		padding-left: 2rem;
 		padding-right: 2rem;
+		box-shadow: 6px 4px 32px $mainColorTwo;
 
 		@include mobile {
 			margin-top: 2rem;
